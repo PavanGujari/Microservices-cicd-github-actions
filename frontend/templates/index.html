@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microservices CI/CD</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .service {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Microservices CI/CD Demo</h1>
+
+    <p>Docker + GitHub Actions + Kubernetes</p>
+
+    <div class="service">
+        <h2>Backend Service</h2>
+        <p class="success">
+            {{ backend_status }}
+        </p>
+    </div>
+
+    <div class="service">
+        <h2>Users Service</h2>
+
+        {% if users %}
+            {% for user in users %}
+                <p>{{ user }}</p>
+            {% endfor %}
+        {% else %}
+            <p>Users service unavailable</p>
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
