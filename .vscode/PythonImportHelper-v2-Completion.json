@@ -1,0 +1,140 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "def home():\n    return jsonify({\n        \"message\": \"Hello from Backend API\"\n    })\n@app.route(\"/health\")\ndef health():\n    return jsonify({\n        \"status\": \"healthy\"\n    })\nif __name__ == \"__main__\":",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "def health():\n    return jsonify({\n        \"status\": \"healthy\"\n    })\nif __name__ == \"__main__\":\n    app.run(host=\"0.0.0.0\", port=5000)",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/api\")\ndef home():\n    return jsonify({\n        \"message\": \"Hello from Backend API\"\n    })\n@app.route(\"/health\")\ndef health():\n    return jsonify({\n        \"status\": \"healthy\"",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "frontend.app",
+        "description": "frontend.app",
+        "peekOfCode": "def home():\n    return render_template(\n        \"index.html\",\n        backend_status=\"Backend connected\",\n        users=[]\n    )\n@app.route(\"/health\")\ndef health():\n    return {\n        \"status\": \"healthy\"",
+        "detail": "frontend.app",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "frontend.app",
+        "description": "frontend.app",
+        "peekOfCode": "def health():\n    return {\n        \"status\": \"healthy\"\n    }\nif __name__ == \"__main__\":\n    app.run(host=\"0.0.0.0\", port=5002)",
+        "detail": "frontend.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "frontend.app",
+        "description": "frontend.app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/\")\ndef home():\n    return render_template(\n        \"index.html\",\n        backend_status=\"Backend connected\",\n        users=[]\n    )\n@app.route(\"/health\")\ndef health():",
+        "detail": "frontend.app",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 2,
+        "importPath": "users-service.app",
+        "description": "users-service.app",
+        "peekOfCode": "def users():\n    return jsonify({\n        \"users\": [\n            \"Pavan\",\n            \"Rahul\",\n            \"Amit\"\n        ]\n    })\n@app.route(\"/health\")\ndef health():",
+        "detail": "users-service.app",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "users-service.app",
+        "description": "users-service.app",
+        "peekOfCode": "def health():\n    return jsonify({\n        \"status\": \"healthy\"\n    })\nif __name__ == \"__main__\":\n    app.run(host=\"0.0.0.0\", port=5001)",
+        "detail": "users-service.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "users-service.app",
+        "description": "users-service.app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route(\"/users\")\ndef users():\n    return jsonify({\n        \"users\": [\n            \"Pavan\",\n            \"Rahul\",\n            \"Amit\"\n        ]\n    })",
+        "detail": "users-service.app",
+        "documentation": {}
+    }
+]

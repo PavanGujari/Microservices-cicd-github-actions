@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "pavan-local-runner",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/R6SXXeScaZbZMTKlrbwyyd9R6kZo1J1iFBUftHsJGSMbr5IpWh/",
+  "gitHubUrl": "https://github.com/PavanGujari/Microservices-cicd-github-actions",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

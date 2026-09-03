@@ -1,0 +1,7 @@
+﻿.vscode/
+actions-runner/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
